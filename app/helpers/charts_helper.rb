@@ -13,7 +13,7 @@ module ChartsHelper
       if controller.controller_name == controller_name
         res << separator << link_name
       else
-        res << separator << link_to(link_name, :controller => controller_name, :project_id => params[:project_id])
+        res << separator << link_to(link_name, :controller => controller_name)
       end
     end
     res
